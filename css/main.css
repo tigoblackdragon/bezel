@@ -45,6 +45,7 @@ body {
   --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
   --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  background-color: #fff;
 }
 
 /* social icon */
@@ -86,7 +87,7 @@ body {
   opacity: 0.6;
 }
 
-.carousel-inner .item1 {
+.car-inn .item1 {
   background-image: url(../img/bg-image-28.jpg);
   max-height: 100vh;
   background-repeat: no-repeat;
@@ -94,7 +95,7 @@ body {
   background-position: center center;
 }
 
-.carousel-inner .item2 {
+.car-inn .item2 {
   background-image: url(../img/bg-image-29.jpg);
   max-height: 100vh;
   background-repeat: no-repeat;
@@ -102,20 +103,20 @@ body {
   background-position: center center;
 }
 
-.carousel-inner h1 {
+.car-inn h1 {
   font-size: 100px;
   font-weight: 800;
   color: white;
 }
-.carousel-inner h4 {
+.car-inn h4 {
   margin-bottom: 3rem;
 }
 
-.carousel-inner button {
+.car-inn button {
   width: 10%;
 }
 
-.carousel-caption {
+.car-cap {
   position: absolute;
   width: 80rem;
 }
@@ -178,34 +179,33 @@ body {
   --bs-btn-color: #000;
   --bs-btn-bg: #f8f9fa;
   --bs-btn-border-color: gray;
-  --bs-btn-hover-color:white;
-  --bs-btn-hover-bg:black;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: black;
   --bs-btn-hover-border-color: black;
   --bs-btn-focus-shadow-rgb: 211, 212, 213;
- }
-.about h6{
-  font-size: 15px;
-
 }
-.about p{
+.about h6 {
+  font-size: 15px;
+}
+.about p {
   font-size: 20px;
   color: gray;
   padding-bottom: 50px;
 }
-.about button{
+.about button {
   width: 8rem;
-  height:3rem ;
+  height: 3rem;
 }
 /* team sec------------------- */
-.team .titl h2{
-font-size: 40px;
-font-weight: 900;
+.team .titl h2 {
+  font-size: 40px;
+  font-weight: 900;
 }
-.team .titl h4{
+.team .titl h4 {
   font-size: 15px;
   color: gray;
-  }
-.team .titl span{
+}
+.team .titl span {
   position: absolute;
   color: gray;
   opacity: 0.2;
@@ -214,22 +214,21 @@ font-weight: 900;
   top: 9px;
   left: 43%;
 }
-.card .ovr-rly3{
+.card .ovr-rly3 {
   min-width: 100%;
   min-height: 21rem;
-  background-color: #18C8DD;
+  background-color: #18c8dd;
   opacity: 0.9;
   top: 21rem;
   transition: 1s ease;
-
 }
-img{
+img {
   display: block;
 }
 .soc-icon2 span {
   padding-right: 10px;
   font-size: 20px;
-  color:white;
+  color: white;
   display: flex;
   align-items: center;
   height: 50px;
@@ -239,47 +238,46 @@ img{
 .soc-icon2 span:hover {
   color: gray;
 }
-.nam-pos h4{
+.nam-pos h4 {
   font-size: 15px;
   font-weight: 800;
   color: white;
   margin-bottom: 0;
 }
-.nam-pos span{
+.nam-pos span {
   font-size: 12px;
   color: white;
-
 }
-.card:hover .ovr-rly3{
-top: 0;
+.card:hover .ovr-rly3 {
+  top: 0;
 }
 
 /* services--------------------------- */
-.services{
-  background-color:#626262 ;
+.services {
+  background-color: #626262;
   color: white;
   padding-top: 10rem;
 }
 
-.services .row h4{
-font-size: smaller;
-font-weight: 900;
+.services .row h4 {
+  font-size: smaller;
+  font-weight: 900;
 }
-.services .titl h2{
+.services .titl h2 {
   font-size: 40px;
   font-weight: 900;
   z-index: 1;
-  }
- 
-  .services .titl span{
-    position: absolute;
-    color: hsl(0, 5%, 63%);
-    opacity: 0.2;
-    font-weight: bold;
-    font-size: 80px;
-    top: 9px;
-    left:-3%;
-  }
+}
+
+.services .titl span {
+  position: absolute;
+  color: hsl(0, 5%, 63%);
+  opacity: 0.2;
+  font-weight: bold;
+  font-size: 80px;
+  top: 9px;
+  left: -3%;
+}
 .chk-lst {
   list-style: none; /* Remove default bullets */
   padding: 0;
@@ -292,125 +290,222 @@ font-weight: 900;
 }
 
 .chk-lst li::before {
-  content: "\f058"; 
-  font-family: "Font Awesome 5 Free"; 
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 18px; 
-  color: white; 
+  font-size: 18px;
+  color: white;
   padding-right: 0.5rem;
 }
 
 /* prices----------------------------- */
-.prices .titl h2{
+.prices .titl h2 {
   font-size: 40px;
   font-weight: 900;
-  }
-  .prices .titl h4{
-    font-size: 15px;
-    color: gray;
-    }
-  .prices .titl span{
-    position: absolute;
-    color: gray;
-    opacity: 0.2;
-    font-weight: bold;
-    font-size: 80px;
-    top: 9px;
-    left: 43%;
-  }
-  .prices{
-  background-color: #F7F7F7;
+}
+.prices .titl h4 {
+  font-size: 15px;
+  color: gray;
+}
+.prices .titl span {
+  position: absolute;
+  color: gray;
+  opacity: 0.2;
+  font-weight: bold;
+  font-size: 80px;
+  top: 9px;
+  left: 43%;
+}
+.prices {
+  background-color: #f7f7f7;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  }
- .dol span{
+}
+.dol span {
   left: -3%;
   top: -15%;
- }
- .chk-lst2 {
+}
+.chk-lst2 {
   list-style: none;
   padding: 0;
- }
+}
 
- .chk-lst2 li{
+.chk-lst2 li {
   color: gray;
   font-size: large;
   font-weight: lighter;
-  padding-bottom: 1rem ;
- }
-.sig-btn{
+  padding-bottom: 1rem;
+}
+.sig-btn {
   color: #fff;
   background-color: #00c3da;
-
 }
 .btn-shadow {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
   position: relative;
-    padding: 0 30px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 4px;
-    border-width: 0;
-    font-size: 14px;
-    font-weight: 600;
-    transition: all .3s ease;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: -0.04em;
-   overflow: hidden;
-    touch-action: manipulation;
-    cursor: pointer;
-    border: 1px solid transparent;
-    --bs-btn-hover-bg: #00c3da;
-    --bs-btn-hover-border-color:none;
+  padding: 0 30px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 4px;
+  border-width: 0;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.04em;
+  overflow: hidden;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  --bs-btn-hover-bg: #00c3da;
+  --bs-btn-hover-border-color: none;
 }
 
-.sig-btn:hover:after{
+.sig-btn:hover:after {
   box-shadow: 0 8px 26px rgba(0, 0, 0, 0.1);
   transform: translatex(200%);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-
 .btn-glo:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
   transform: skewX(-20deg);
-  background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.419), transparent);
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.419),
+    transparent
+  );
 }
 .g h2 {
   font-size: 70px;
   font-weight: lighter;
   color: #00c3da;
-  margin-top:0;
+  margin-top: 0;
 }
 span.g {
   font-size: 50px;
   color: #00c3da;
 }
 .g.card-body {
-min-height: 350px ;
+  min-height: 550px;
 }
-.card-body:hover{
+.card-body:hover {
   box-shadow: 0 8px 26px rgba(0, 0, 0, 0.1);
 }
 .card-body {
   border-radius: 0;
 }
 
-h2 .badge{
+h2 .badge {
   transform: scale(0.2);
-  top:-60%;
-  left:10%;
+  top: -60%;
+  left: 10%;
+}
+/* FEEDBACK-------------------------- */
+.fed-bck {
+  background-color: #f7f7f7;
+  padding-top: 10rem;
+}
+.hd-tit h4 {
+  font-size: 15px;
+  font-weight: 100;
+}
+.carousel-item img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  left: 43%;
+  top: -10%;
+}
+.caro2 {
+  width: 800px;
+  height: 350px;
+  background-color: #f7f7f7;
+  margin: auto;
+}
+.car-inn2 {
+  background-color: #f7f7f7;
+}
+
+#carouselExampleCaptions2 h4 {
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+}
+#carouselExampleCaptions2 span {
+  color: black;
+  font-size: 15px;
+  font-weight: 300;
+}
+#carouselExampleCaptions2 p {
+  color: gray;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+}
+.car-cap {
+  top: 30%;
+  left: 13%;
+  min-width: 500px;
+  min-height: 150px;
 }
 
 
+.ind-btn {
+  max-width: 80px;
+  max-height: 80px;
+}
+.ind-btn button {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+}
+#car-inn {
+  position: absolute;
+  bottom: -80px;
+  left: 30% ;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+.ind-btn{
+  transform: scale(0.2);
+}
 
+.arrows1 {
+  height: 400px;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #00c3da;
+}
 
+/* contact--------------------------- */
 
+.contact .titl h2 {
+  font-size: 40px;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.contact .titl span {
+  position: absolute;
+  color: hsl(0, 5%, 63%);
+  opacity: 0.2;
+  font-weight: bold;
+  font-size: 80px;
+  top: 9px;
+  left: -3%;
+}
 
 
 
