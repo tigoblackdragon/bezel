@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -16,14 +16,14 @@
   </head>
   <body>
     <!-- loader -->
-    <div class="loader brd">
+    <div class="loader">
       <div id="preloader" class="spinner-grow" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bot">
+    <nav class="navbar navbar-expand-lg border-bot fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img id="light" src="img/logo-light.png" alt="" />
@@ -77,7 +77,11 @@
     </nav>
 
     <!-- hero section -->
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div
+      id="carouselExampleCaptions"
+      data-bs-ride="carousel"
+      class="hero carousel slide"
+    >
       <div class="carousel-indicators">
         <button
           type="button"
@@ -97,48 +101,336 @@
       <div class="carousel-inner">
         <div class="carousel-item item1 active">
           <div class="ovr-rly"></div>
-          <img src="..." class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+          <div
+            class="carousel-caption d-none d-md-block top-55 start-50 translate-middle"
+          >
+            <h1>Get Awesome.</h1>
+            <h4>We are an innovative company making digital stuff</h4>
+            <button class="btn btn-info text-white fw-bold me-4">
+              Read More
+            </button>
+            <button class="btn btn-outline-light fw-bold">Contact</button>
           </div>
         </div>
+
         <div class="carousel-item item2">
           <div class="ovr-rly"></div>
-          <img src="..." class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+          <div
+            class="carousel-caption d-none d-md-block top-55 start-50 translate-middle"
+          >
+            <h1>Create With Bezel.</h1>
+            <h4>We are an innovative company making digital stuff</h4>
+            <button class="btn btn-info text-white fw-bold me-4">
+              Read More
+            </button>
+            <button class="btn btn-outline-light fw-bold">Contact</button>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    </div>
+    <div class="buttons position-absolute">
+      <div class="btn1">
+        <button
+          class="carousel-control-prev carousel-prev-pos"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span
+            class="fa-solid fa-arrow-left overflow-hidden bord-car d-flex align-items-center justify-content-center"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <div class="ovr-rly1 position-relative">
+          <div class="box position-absolute"></div>
+        </div>
+      </div>
+
+      <div class="btn2">
+        <button
+          class="carousel-control-next carousel-next-pos"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span
+            class="fa-solid fa-arrow-right bord-car d-flex align-items-center justify-content-center"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="ovr-rly2 position-relative">
+          <div class="box position-absolute"></div>
+        </div>
+      </div>
     </div>
 
     <!-- about section -->
+    <div class="about mt-5 pb-5 border-bottom">
+      <div class="container text-center pb-5">
+        <div class="w-50 m-auto pt-5">
+          <h6>WHO WE ARE</h6>
+          <p>
+            We are an innovative company. We develop and design websitesfor
+            costumers around the world. Our clients are some of the most
+            forward-looking companies in the world.
+          </p>
+          <button class="btn btn-lig rounded-0">Read More</button>
+        </div>
+      </div>
+    </div>
+    <!-- Team -->
+    <div class="team mt-5 mb-5">
+      <div class="container">
+        <div
+          class="titl w-50 mb-5 pb-5 m-auto text-center pt-5 position-relative"
+        >
+          <h2><span>C</span>Creative Team</h2>
+          <h4>We are digital thinkers</h4>
+        </div>
+        <div class="row d-flex pb-5">
+          <div class="col-3">
+            <div class="inr">
+              <div class="card position-relative overflow-hidden">
+                <img
+                  src="img/team-1.jpg"
+                  class="card-img-top"
+                  alt="my team 1"
+                />
+                <div
+                  class="ovr-rly3 d-flex flex-column justify-content-between position-absolute"
+                >
+                  <div class="soc-icon2 ms-3 mt-0 d-flex flex-row flex-nowrap">
+                    <span class="fa-brands fa-facebook"></span>
+                    <span class="fa-brands fa-instagram"></span>
+                    <span class="fa-brands fa-twitter"></span>
+                  </div>
+                  <div class="nam-pos ms-3">
+                    <h4>LUKE CAGE</h4>
+                    <span>Founder & CEO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="inr">
+              <div class="card position-relative overflow-hidden">
+                <img
+                  src="img/team-2.jpg"
+                  class="card-img-top"
+                  alt="my team 2"
+                />
+                <div
+                  class="ovr-rly3 d-flex flex-column justify-content-between position-absolute"
+                >
+                  <div class="soc-icon2 ms-3 mt-0 d-flex flex-row flex-nowrap">
+                    <span class="fa-brands fa-facebook"></span>
+                    <span class="fa-brands fa-instagram"></span>
+                    <span class="fa-brands fa-twitter"></span>
+                  </div>
+                  <div class="nam-pos ms-3">
+                    <h4>JESSICA JONES</h4>
+                    <span>Product Designer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="inr">
+              <div class="card position-relative overflow-hidden">
+                <img
+                  src="img/team-3.jpg"
+                  class="card-img-top"
+                  alt="my team 3"
+                />
+                <div
+                  class="ovr-rly3 d-flex flex-column justify-content-between position-absolute"
+                >
+                  <div class="soc-icon2 ms-3 mt-0 d-flex flex-row flex-nowrap">
+                    <span class="fa-brands fa-facebook"></span>
+                    <span class="fa-brands fa-instagram"></span>
+                    <span class="fa-brands fa-twitter"></span>
+                  </div>
+                  <div class="nam-pos ms-3">
+                    <h4>MATT MURDOCK</h4>
+                    <span>Lead Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="inr">
+              <div class="card position-relative overflow-hidden">
+                <img
+                  src="img/team-4.jpg"
+                  class="card-img-top"
+                  alt="my team 4"
+                />
+                <div
+                  class="ovr-rly3 d-flex flex-column justify-content-between position-absolute"
+                >
+                  <div class="soc-icon2 ms-3 mt-0 d-flex flex-row flex-nowrap">
+                    <span class="fa-brands fa-facebook"></span>
+                    <span class="fa-brands fa-instagram"></span>
+                    <span class="fa-brands fa-twitter"></span>
+                  </div>
+                  <div class="nam-pos ms-3">
+                    <h4>MATT MURDOCK</h4>
+                    <span>Lead Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- services -->
+    <div class="services">
+      <div class="container">
+        <div class="r1 row">
+          <div class="col-2"><h4>STUNNING DESIGN</h4></div>
+          <div class="col-2"><h4>TIME SAVER</h4></div>
+          <div class="col-2"><h4>CLEAN CODE</h4></div>
+          <div class="col-2"><h4>CUSTOMIZABLE</h4></div>
+          <div class="col-2"><h4>PERFECT LAYOUT</h4></div>
+          <div class="col-2"><h4>RETINA READY</h4></div>
+        </div>
+        <div class="r2 row flex-row justify-content-between align-items-center">
+          <div class="c1 col-4">
+            <div class="titl mb-5 pb-5 m-auto pt-5 position-relative">
+              <h2><span>W</span>What We Do.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam ipsam ullam incidunt itaque nemo omnis temporibus totam
+                quibusdam repellat vero, recusandae excepturi dignissimos velit
+                et alias amet, quia facilis perferendis.
+              </p>
+            </div>
+          </div>
+          <div class="col-3">
+            <ul class="chk-lst">
+              <li>Research</li>
+              <li>Opportunity Analysis</li>
+              <li>Consulting</li>
+              <li>Brand Planning</li>
+              <li>Customer Support</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul class="chk-lst">
+              <li>Logo & Branding</li>
+              <li>Style guides</li>
+              <li>Motion graphics</li>
+              <li>UX/UI-design</li>
+              <li>Social media design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- counter -->
+    <!-- prices-->
+    <div class="prices">
+      <div class="container">
+        <div
+          class="titl w-50 mb-5 pb-5 m-auto text-center pt-5 position-relative"
+        >
+          <h2><span>C</span>Cheap Prices</h2>
+          <h4>We provide the best quality.</h4>
+        </div>
+        <div class="pr-card row ">
+          <div 
+             class="col-3" ><div class="card">
+              <div class="card-body rounded-0 pt-4 pb-4 ps-4 pe-4">
+                <h4 class="card-title fs-6 pt-3 pb-3">Starter</h4>
+                <div class="dol pb-5">
+                  <h2 class="border-bottom fs-1 fw-bold position-relative pb-5">
+                    <span class="fs-6 fw-light position-absolute"> $</span> 9
+                  </h2>
+                </div>
+                <ul class="chk-lst2">
+                  <li>Unlimited Connections</li>
+                  <li>24/7 Support</li>
+                  <li>Full SSL Protection</li>
+                  <li>Unlimited Channels</li>
+                </ul>
 
-    <!-- port new-->
+                <a href="#" class=" sig-btn btn btn-primary btn-glo btn-sm btn-shadow">Sign up
+                  <div class="skw-rly"></div>
+                </a>
+              </div>
+            </div></div
+          >
+          <div class="col-3" ><div class="card" >
+            <div class="card-body rounded-0 pt-4 pb-4 ps-4 pe-4">
+              <h4 class="card-title fs-6 pt-3 pb-3">Silver</h4>
+              <div class="dol pb-5">
+                <h2 class="border-bottom fs-1 fw-bold position-relative pb-5">
+                  <span class="fs-6 fw-light position-absolute"> $</span> 19
+                </h2>
+              </div>
+              <ul class="chk-lst2">
+                <li>Unlimited Connections</li>
+                <li>24/7 Support</li>
+                <li>Full SSL Protection</li>
+                <li>Unlimited Channels</li>
+              </ul>
+
+              <a href="#" class=" sig-btn btn btn-primary btn-glo btn-sm btn-shadow">Sign up
+                <div class="skw-rly"></div>
+              </a>
+            </div>
+          </div></div>
+          <div class="col-3" ><div class="card" >
+            <div class="g card-body rounded-0 pt-4 pb-4 ps-4 pe-4">
+              <h4 class="card-title fs-6 pt-3 pb-3">gold</h4>
+              <div class="dol pb-5">
+                <h2 class="g border-bottom fw-bold position-relative pb-5">
+                  <span class="g fs-6 fw-light position-absolute"> $</span> 29
+                  <span class="badge rounded-pill text-bg-info text-white position-absolute">Best Value</span>
+                </h2>
+              </div>
+              <ul class="chk-lst2">
+                <li>Unlimited Connections</li>
+                <li>24/7 Support</li>
+                <li>Full SSL Protection</li>
+                <li>Unlimited Channels</li>
+              </ul>
+
+              <a href="#" class=" sig-btn btn btn-primary btn-glo btn-sm btn-shadow">Sign up
+                <div class="skw-rly"></div>
+              </a>
+            </div>
+          </div></div>
+          <div class="col-3" ><div class="card" >
+              <div class="card-body rounded-0 pt-4 pb-4 ps-4 pe-4">
+                <h4 class="card-title fs-6 pt-3 pb-3">Platnium</h4>
+                <div class="dol pb-5">
+                  <h2 class="border-bottom fs-1 fw-bold position-relative pb-5">
+                    <span class="fs-6 fw-light position-absolute"> $</span> 49
+                  </h2>
+                </div>
+                <ul class="chk-lst2">
+                  <li>Unlimited Connections</li>
+                  <li>24/7 Support</li>
+                  <li>Full SSL Protection</li>
+                  <li>Unlimited Channels</li>
+                </ul>
+
+                <a href="#" class=" sig-btn btn btn-primary btn-glo btn-sm btn-shadow">Sign up
+                  <div class="skw-rly"></div>
+                </a>
+              </div>
+            </div></div>
+        </div> 
+      </div>
+    </div>
 
     <!-- carousel -->
 
