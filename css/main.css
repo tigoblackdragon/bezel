@@ -64,20 +64,24 @@ body {
 }
 
 .border-st {
-  border-left: var(--bs-border-width) var(--bs-border-style)
-    var(--bs-border-color) !important;
+  border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
   --bs-border-color: black;
   --bs-border-width: 1px;
 }
 
 .border-bot {
-  border-bottom: var(--bs-border-width) var(--bs-border-style)
-    var(--bs-border-color) !important;
+  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
   --bs-border-color: black;
   --bs-border-width: 1px;
 }
 
 /* hero------------------------- */
+.hero {
+  width: 100%;
+  white-space: normal;
+  
+}
+
 .ovr-rly {
   background-color: black;
   top: 0;
@@ -103,10 +107,20 @@ body {
   background-position: center center;
 }
 
-.car-inn h1 {
-  font-size: 100px;
+.car-inn h2 {
+  font-size: 92px;
   font-weight: 800;
   color: white;
+  display: block;
+
+}
+
+.car-cap button {
+  height: 14%;
+}
+
+.buttons:hover button {
+  color: gray;
 }
 .car-inn h4 {
   margin-bottom: 3rem;
@@ -130,18 +144,21 @@ body {
   width: 50px;
   height: 50px;
 }
+
 .carousel-prev-pos {
   /* left: 0px;
   top: 350px; */
   width: 50px;
   height: 50px;
 }
+
 .carousel-next-pos {
   left: 0px;
   top: 50px;
   width: 50px;
   height: 50px;
 }
+
 .buttons {
   top: 300px;
 }
@@ -154,12 +171,15 @@ body {
   top: 0;
   left: -50px;
 }
+
 .ovr-rly1 {
   transition: transform 1s;
 }
+
 .ovr-rly2 {
   transition: transform 1s;
 }
+
 .ovr-rly2 .box {
   position: absolute;
   background-color: white;
@@ -168,12 +188,15 @@ body {
   top: 50px;
   left: -50px;
 }
-.btn1 button:hover + .ovr-rly1 {
+
+.btn1 button:hover+.ovr-rly1 {
   transform: translateX(50px);
 }
-.btn2 button:hover + .ovr-rly2 {
+
+.btn2 button:hover+.ovr-rly2 {
   transform: translateX(50px);
 }
+
 /* about sec------------------- */
 .btn-lig {
   --bs-btn-color: #000;
@@ -184,27 +207,38 @@ body {
   --bs-btn-hover-border-color: black;
   --bs-btn-focus-shadow-rgb: 211, 212, 213;
 }
+
 .about h6 {
   font-size: 15px;
 }
+
 .about p {
   font-size: 20px;
   color: gray;
   padding-bottom: 50px;
 }
+
 .about button {
   width: 8rem;
   height: 3rem;
 }
+.buttons {
+  width: 55px;
+  height: 105px;
+  box-sizing: border-box;
+}
+
 /* team sec------------------- */
 .team .titl h2 {
   font-size: 40px;
   font-weight: 900;
 }
+
 .team .titl h4 {
   font-size: 15px;
   color: gray;
 }
+
 .team .titl span {
   position: absolute;
   color: gray;
@@ -214,17 +248,20 @@ body {
   top: 9px;
   left: 43%;
 }
+
 .card .ovr-rly3 {
   min-width: 100%;
   min-height: 21rem;
   background-color: #18c8dd;
   opacity: 0.9;
-  top: 21rem;
+  top: 100%;
   transition: 1s ease;
 }
+
 img {
   display: block;
 }
+
 .soc-icon2 span {
   padding-right: 10px;
   font-size: 20px;
@@ -238,16 +275,19 @@ img {
 .soc-icon2 span:hover {
   color: gray;
 }
+
 .nam-pos h4 {
   font-size: 15px;
   font-weight: 800;
   color: white;
   margin-bottom: 0;
 }
+
 .nam-pos span {
   font-size: 12px;
   color: white;
 }
+
 .card:hover .ovr-rly3 {
   top: 0;
 }
@@ -263,6 +303,7 @@ img {
   font-size: smaller;
   font-weight: 900;
 }
+
 .services .titl h2 {
   font-size: 40px;
   font-weight: 900;
@@ -275,17 +316,19 @@ img {
   opacity: 0.2;
   font-weight: bold;
   font-size: 80px;
-  top: 9px;
-  left: -3%;
+ 
 }
+
+
 .chk-lst {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
   padding: 0;
 }
 
 .chk-lst li {
   position: relative;
-  padding-left: 25px; /* Adjust based on icon size */
+  padding-left: 25px;
+  /* Adjust based on icon size */
   margin-bottom: 10px;
 }
 
@@ -303,10 +346,12 @@ img {
   font-size: 40px;
   font-weight: 900;
 }
+
 .prices .titl h4 {
   font-size: 15px;
   color: gray;
 }
+
 .prices .titl span {
   position: absolute;
   color: gray;
@@ -316,15 +361,18 @@ img {
   top: 9px;
   left: 43%;
 }
+
 .prices {
   background-color: #f7f7f7;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
 .dol span {
   left: -3%;
   top: -15%;
 }
+
 .chk-lst2 {
   list-style: none;
   padding: 0;
@@ -336,10 +384,12 @@ img {
   font-weight: lighter;
   padding-bottom: 1rem;
 }
+
 .sig-btn {
   color: #fff;
   background-color: #00c3da;
 }
+
 .btn-shadow {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
   position: relative;
@@ -375,60 +425,66 @@ img {
   width: 100%;
   height: 100%;
   transform: skewX(-20deg);
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    rgba(255, 255, 255, 0.419),
-    transparent
-  );
+  background-image: linear-gradient(to right,
+      transparent,
+      rgba(255, 255, 255, 0.419),
+      transparent);
 }
+
 .g h2 {
   font-size: 70px;
   font-weight: lighter;
   color: #00c3da;
   margin-top: 0;
 }
+
 span.g {
   font-size: 50px;
   color: #00c3da;
 }
-.g.card-body {
-  min-height: 550px;
-}
+
+
 .card-body:hover {
   box-shadow: 0 8px 26px rgba(0, 0, 0, 0.1);
 }
+
 .card-body {
   border-radius: 0;
 }
 
-h2 .badge {
-  transform: scale(0.2);
-  top: -60%;
-  left: 10%;
+.dol .badge {
+  top: 6%;
+  left:60%;
 }
+
+
+
 /* FEEDBACK-------------------------- */
 .fed-bck {
   background-color: #f7f7f7;
   padding-top: 10rem;
 }
+
 .hd-tit h4 {
   font-size: 15px;
   font-weight: 100;
 }
+
 .carousel-item img {
   max-width: 100px;
   max-height: 100px;
   border-radius: 50%;
-  left: 43%;
+  left: 45%;
   top: -10%;
 }
+
 .caro2 {
   width: 800px;
   height: 350px;
   background-color: #f7f7f7;
   margin: auto;
 }
+
 .car-inn2 {
   background-color: #f7f7f7;
 }
@@ -438,22 +494,23 @@ h2 .badge {
   font-size: 30px;
   font-weight: 900;
 }
+
 #carouselExampleCaptions2 span {
   color: black;
   font-size: 15px;
   font-weight: 300;
 }
+
 #carouselExampleCaptions2 p {
   color: gray;
   font-size: 18px;
   font-weight: lighter;
   text-align: center;
 }
+
 .car-cap {
-  top: 30%;
-  left: 13%;
-  min-width: 500px;
-  min-height: 150px;
+  max-width: 75%;
+  margin: auto;
 }
 
 
@@ -461,15 +518,17 @@ h2 .badge {
   max-width: 80px;
   max-height: 80px;
 }
+
 .ind-btn button {
   min-width: 50px;
   min-height: 50px;
   border-radius: 50%;
 }
+
 #car-inn {
   position: absolute;
   bottom: -80px;
-  left: 30% ;
+  left: 30%;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -478,13 +537,19 @@ h2 .badge {
   margin-bottom: 1rem;
   margin-left: 15%;
 }
-.ind-btn{
+
+.ind-btn {
   transform: scale(0.2);
 }
 
-.arrows1 {
-  height: 400px;
+
+.ms-10p{
+  margin-left: 13%;
 }
+.ms-i{
+  margin-left:-3%;
+}
+
 .carousel-indicators [data-bs-target] {
   background-color: #00c3da;
 }

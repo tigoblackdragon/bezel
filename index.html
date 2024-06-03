@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap-utilities.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <!-- loader -->
@@ -23,8 +24,8 @@
     </div>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg border-bot fixed-top  w-100">
-      <div class="container  ">
+    <nav class="navbar navbar-expand-lg border-bot fixed-top w-100">
+      <div class="container">
         <a class="navbar-brand" href="#"
           ><img id="light" src="img/logo-light.png" alt="" />
           <img id="dark" src="img/logo-dark.png" alt=""
@@ -77,99 +78,105 @@
     </nav>
 
     <!-- hero section -->
-    <div
-      id="carouselExampleCaptions"
-      data-bs-ride="carousel"
-      class="hero carousel slide "
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
+    <div class="hero position-relative">
+      <div
+        id="carouselExampleCaptions"
+        data-bs-ride="carousel"
+        class="hero carousel slide brd"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner car-inn">
+          <div class="carousel-item item1 active">
+            <div class="ovr-rly"></div>
+            <div
+              class="carousel-caption brd car-cap top-55 start-50 translate-middle"
+            >
+              <h2 class="brd ">Get Awesome.</h2>
+              <h4 class="brd">We are an innovative company making digital stuff</h4>
+              <a
+                href="#"
+                class="sig-btn btn btn-primary btn-glo btn-sm fw-bold btn-shadow me-4"
+                >Read More
+                <div class="skw-rly"></div>
+              </a>
+              <button class="btn btn-outline-light fw-bold">Contact</button>
+            </div>
+          </div>
+
+          <div class="carousel-item item2">
+            <div class="ovr-rly"></div>
+            <div
+              class="carousel-caption car-cap d-md-block top-55 start-50 translate-middle"
+            >
+              <h2>Create With Bezel.</h2>
+              <h4>We are an innovative company making digital stuff</h4>
+              <a
+                href="#"
+                class="sig-btn btn btn-primary btn-glo btn-sm fw-bold btn-shadow me-4"
+                >Read More
+                <div class="skw-rly"></div>
+              </a>
+              <button class="btn btn-outline-light fw-bold">Contact</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="carousel-inner car-inn">
-        <div class="carousel-item item1 active">
-          <div class="ovr-rly"></div>
-          <div
-            class="carousel-caption car-cap d-none d-md-block top-55 start-50 translate-middle"
+      <div class="buttons position-absolute" id="buttons">
+        <div class="btn1">
+          <button
+            class="carousel-control-prev carousel-prev-pos"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
           >
-            <h1>Get Awesome.</h1>
-            <h4>We are an innovative company making digital stuff</h4>
-            <a href="#" class="sig-btn btn btn-primary btn-glo btn-sm fw-bold btn-shadow me-4"
-            >Read More
-            <div class="skw-rly"></div>
-          </a>
-            <button class="btn btn-outline-light fw-bold">Contact</button>
+            <span
+              class="fa-solid fa-arrow-left overflow-hidden bord-car d-flex align-items-center justify-content-center"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <div class="ovr-rly1 position-relative">
+            <div class="box position-absolute"></div>
           </div>
         </div>
 
-        <div class="carousel-item item2">
-          <div class="ovr-rly"></div>
-          <div
-            class="carousel-caption car-cap d-none d-md-block top-55 start-50 translate-middle"
+        <div class="btn2">
+          <button
+            class="carousel-control-next carousel-next-pos"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
           >
-            <h1>Create With Bezel.</h1>
-            <h4>We are an innovative company making digital stuff</h4>
-            <a href="#" class="sig-btn btn btn-primary btn-glo btn-sm fw-bold btn-shadow me-4"
-            >Read More
-            <div class="skw-rly"></div>
-          </a>
-            <button class="btn btn-outline-light fw-bold">Contact</button>
+            <span
+              class="fa-solid fa-arrow-right bord-car d-flex align-items-center justify-content-center"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="ovr-rly2 position-relative">
+            <div class="box position-absolute"></div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="buttons position-absolute">
-      <div class="btn1">
-        <button
-          class="carousel-control-prev carousel-prev-pos"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span
-            class="fa-solid fa-arrow-left overflow-hidden bord-car d-flex align-items-center justify-content-center"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <div class="ovr-rly1 position-relative">
-          <div class="box position-absolute"></div>
-        </div>
-      </div>
-
-      <div class="btn2">
-        <button
-          class="carousel-control-next carousel-next-pos"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span
-            class="fa-solid fa-arrow-right bord-car d-flex align-items-center justify-content-center"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <div class="ovr-rly2 position-relative">
-          <div class="box position-absolute"></div>
         </div>
       </div>
     </div>
 
     <!-- about section -->
-    <div class="about mt-5 pb-5 border-bottom ">
+    <div class="about mt-5 pb-5 border-bottom w-100">
       <div class="container text-center pb-5">
         <div class="w-50 m-auto pt-5">
           <h6>WHO WE ARE</h6>
@@ -183,7 +190,7 @@
       </div>
     </div>
     <!-- Team -->
-    <div class="team mt-5 mb-5 ">
+    <div class="team mt-5 mb-5 w-100">
       <div class="container">
         <div
           class="titl w-50 mb-5 pb-5 m-auto text-center pt-5 position-relative"
@@ -192,7 +199,7 @@
           <h4>We are digital thinkers</h4>
         </div>
         <div class="row d-flex pb-5">
-          <div class="col-3">
+          <div class=" col-sm-12 col-md-6 col-lg-3 pb-4">
             <div class="inr">
               <div class="card position-relative overflow-hidden">
                 <img
@@ -201,7 +208,7 @@
                   alt="my team 1"
                 />
                 <div
-                  class="ovr-rly3 d-flex flex-column justify-content-between position-absolute"
+                  class="ovr-rly3 d-flex w-100 h-100 flex-column justify-content-between position-absolute"
                 >
                   <div class="soc-icon2 ms-3 mt-0 d-flex flex-row flex-nowrap">
                     <span class="fa-brands fa-facebook"></span>
@@ -216,7 +223,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class=" col-sm-12 col-md-6 col-lg-3 pb-4">
             <div class="inr">
               <div class="card position-relative overflow-hidden">
                 <img
@@ -225,7 +232,7 @@
                   alt="my team 2"
                 />
                 <div
-                  class="ovr-rly3 d-flex flex-column justify-content-between position-absolute"
+                  class="ovr-rly3 w-100 h-100 d-flex flex-column justify-content-between position-absolute"
                 >
                   <div class="soc-icon2 ms-3 mt-0 d-flex flex-row flex-nowrap">
                     <span class="fa-brands fa-facebook"></span>
@@ -240,7 +247,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class=" col-sm-12 col-md-6 col-lg-3 pb-4">
             <div class="inr">
               <div class="card position-relative overflow-hidden">
                 <img
@@ -249,7 +256,7 @@
                   alt="my team 3"
                 />
                 <div
-                  class="ovr-rly3 d-flex flex-column justify-content-between position-absolute"
+                  class="ovr-rly3 w-100 h-100 d-flex flex-column justify-content-between position-absolute"
                 >
                   <div class="soc-icon2 ms-3 mt-0 d-flex flex-row flex-nowrap">
                     <span class="fa-brands fa-facebook"></span>
@@ -264,7 +271,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class=" col-sm-12 col-md-6 col-lg-3 pb-4">
             <div class="inr">
               <div class="card position-relative overflow-hidden">
                 <img
@@ -273,7 +280,7 @@
                   alt="my team 4"
                 />
                 <div
-                  class="ovr-rly3 d-flex flex-column justify-content-between position-absolute"
+                  class="ovr-rly3 w-100 h-100 d-flex flex-column justify-content-between position-absolute"
                 >
                   <div class="soc-icon2 ms-3 mt-0 d-flex flex-row flex-nowrap">
                     <span class="fa-brands fa-facebook"></span>
@@ -293,19 +300,19 @@
     </div>
 
     <!-- services -->
-    <div class="services ">
+    <div class="services">
       <div class="container">
         <div class="r1 row">
-          <div class="col-2"><h4>STUNNING DESIGN</h4></div>
-          <div class="col-2"><h4>TIME SAVER</h4></div>
-          <div class="col-2"><h4>CLEAN CODE</h4></div>
-          <div class="col-2"><h4>CUSTOMIZABLE</h4></div>
-          <div class="col-2"><h4>PERFECT LAYOUT</h4></div>
-          <div class="col-2"><h4>RETINA READY</h4></div>
+          <div class="col-lg-2 col-md-4 "><h4>STUNNING DESIGN</h4></div>
+          <div class="col-lg-2 col-md-4"><h4>TIME SAVER</h4></div>
+          <div class="col-lg-2 col-md-4 "><h4>CLEAN CODE</h4></div>
+          <div class="col-lg-2 col-md-4"><h4>CUSTOMIZABLE</h4></div>
+          <div class="col-lg-2 col-md-4"><h4>PERFECT LAYOUT</h4></div>
+          <div class="col-lg-2 col-md-4"><h4>RETINA READY</h4></div>
         </div>
         <div class="r2 row flex-row justify-content-between align-items-center">
-          <div class="c1 col-4">
-            <div class="titl mb-5 pb-5 m-auto pt-5 position-relative">
+          <div class="c1 col-lg-4 col-md-12 text-md-center">
+            <div class="titl mb-5 brd pb-5 m-auto pt-5 position-relative text-lg-start text-md-center">
               <h2><span>W</span>What We Do.</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -315,7 +322,7 @@
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6">
             <ul class="chk-lst">
               <li>Research</li>
               <li>Opportunity Analysis</li>
@@ -324,7 +331,7 @@
               <li>Customer Support</li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6">
             <ul class="chk-lst">
               <li>Logo & Branding</li>
               <li>Style guides</li>
@@ -338,7 +345,7 @@
     </div>
 
     <!-- prices-->
-    <div class="prices ">
+    <div class="prices w-100">
       <div class="container">
         <div
           class="titl w-50 mb-5 pb-5 m-auto text-center pt-5 position-relative"
@@ -347,7 +354,7 @@
           <h4>We provide the best quality.</h4>
         </div>
         <div class="pr-card row">
-          <div class="col-3 pt-4">
+          <div class="col-md-12 col-lg-6 col-xl-3 pt-4">
             <div class="card">
               <div class="card-body rounded-0 pt-4 pb-4 ps-4 pe-4">
                 <h4 class="card-title fs-6 pt-3 pb-3">Starter</h4>
@@ -372,7 +379,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pt-4">
+          <div class="col-md-12 col-lg-6 col-xl-3  pt-4">
             <div class="card">
               <div class="card-body rounded-0 pt-4 pb-4 ps-4 pe-4">
                 <h4 class="card-title fs-6 pt-3 pb-3">Silver</h4>
@@ -397,18 +404,20 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <div class="card">
+          <div class="col-md-12 col-lg-6 col-xl-3 gld">
+            <div class="card brd">
               <div class="g card-body rounded-0 pt-4 pb-4 ps-4 pe-4">
                 <h4 class="card-title fs-6 pt-3 pb-3">gold</h4>
                 <div class="dol pb-5">
-                  <h2 class="g border-bottom fw-bold position-relative pb-5">
+                  <h2
+                    class="g border-bottom position-relative fw-bold brd pb-3"
+                  >
                     <span class="g fs-6 fw-light position-absolute"> $</span> 29
-                    <span
-                      class="badge rounded-pill text-bg-info text-white position-absolute"
-                      >Best Value</span
-                    >
                   </h2>
+                  <span
+                    class="badge rounded-pill text-bg-info text-white position-absolute"
+                    >Best Value</span
+                  >
                 </div>
                 <ul class="chk-lst2">
                   <li>Unlimited Connections</li>
@@ -426,7 +435,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pt-4">
+          <div class="col-md-12 col-lg-6 col-xl-3 pt-4">
             <div class="card">
               <div class="card-body rounded-0 pt-4 pb-4 ps-4 pe-4">
                 <h4 class="card-title fs-6 pt-3 pb-3">Platnium</h4>
@@ -456,12 +465,12 @@
     </div>
 
     <!-- feedback -->
-    <div class="fed-bck pb-5  ps-0 ms-0 pe-0 me-0">
-      <div class="container overflow-hidden">
-        <div class="hd-tit w-25 m-auto text-center pb-5">
+    <div class="fed-bck pb-5 ps-0 ms-0 pe-0 me-0">
+      <div class="container overflow-hidden ">
+        <div class="hd-tit w-25 m-auto text-center  pb-5">
           <h4>HAPPY CUSTOMERS</h4>
         </div>
-        <div class="arrows1 position-relative">
+        <div class="arrows1 w-100 position-relative m-auto brd">
           <button
             class="carousel-control-prev position-absolute btn-lft"
             type="button"
@@ -482,10 +491,10 @@
             <i class="fa-solid fa-arrow-right text-black fs-1"></i>
             <span class="visually-hidden">Next</span>
           </button>
-          <div id="carouselExampleCaptions2" class="carousel slide caro2">
-            <div class="carousel-inner car-inn2 h-100 overflow-visible">
+          <div id="carouselExampleCaptions2" class="carousel w-100 m-auto slide caro2">
+            <div class="carousel-inner car-inn2  overflow-visible">
               <div
-                class="carousel-item active position-relative h-100 bg-white"
+                class="carousel-item w-75 ms-10p active brd position-relative h-100 bg-white"
               >
                 <img
                   src="img/testimonial-1.jpg"
@@ -493,7 +502,7 @@
                   alt="Marissa Mayer "
                 />
                 <div
-                  class="carousel-caption car-cap d-none d-md-block w-75 h-25 position-absolute"
+                  class="carousel-caption w-100 brd car-cap d-block ms-i pt-5 "
                 >
                   <h4>Marissa Mayer</h4>
                   <span class="">CEO, Yahoo</span>
@@ -505,14 +514,14 @@
                   </p>
                 </div>
               </div>
-              <div class="carousel-item position-relative h-100 bg-white">
+              <div class="carousel-item w-75 position-relative ms-10p h-100 bg-white">
                 <img
                   src="img/testimonial-2.jpg"
                   class="d-block w-100 position-absolute"
                   alt="Mark Zuckerberg"
                 />
                 <div
-                  class="carousel-caption car-cap d-none d-md-block w-75 h-25 position-absolute"
+                  class="carousel-caption w-100 brd car-cap d-block ms-i pt-5"
                 >
                   <h4>Mark Zuckerberg</h4>
                   <span class="testimonial-info">Founder & CEO, Facebook</span>
@@ -547,18 +556,19 @@
     </div>
 
     <!-- contact -->
-   <div class="contact w-100 ">
+    <div class="contact w-100">
       <div class="row flex-row w-100">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12">
           <iframe
-            id="map" class="w-100 h-100"
+            id="map"
+            class="w-100 h-100"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3861596338457!2d144.9630585156898!3d-37.81410794202139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sVictoria%2C%20Australia!5e0!3m2!1sen!2sus!4v1620334471398!5m2!1sen!2sus"
             allowfullscreen=""
             loading="lazy"
           >
           </iframe>
         </div>
-        <div class="col-4 p-lg-5 m-lg-4">
+        <div class="col-lg-4 col-md-8 p-lg-5 m-lg-4 m-auto">
           <div class="titl pb-5 m-auto pt-5 position-relative">
             <h2><span>G</span>Get In Touch</h2>
             <p>Let's work together.</p>
